@@ -44,7 +44,19 @@ def kartyat_huz(cards):
     random_kartya = cards[random.randint(0,len(cards))]
     return random_kartya
 
+#inic pakli
+
+def inic():
+    for i in range(2):
+        jatekos_kez.append(kartyat_huz(cards))
+    haz_kez.append(kartyat_huz(cards))
+
+inic()
+
+print(jatekos_kez,haz_kez)
+
 #játékos ciklus beleágyazva ház ciklus
 
-while(kartyat_ker):
-    kartyak_ker = True
+#while(kartyat_ker):
+#    kartyat_ker = True
+#   print(f"")
