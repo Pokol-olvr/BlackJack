@@ -39,9 +39,10 @@ def comparator(value1,value2,house_vs_player):
 
 #kártyahúzás és shuffle
 
+random.shuffle(cards)
+
 def kartyat_huz(cards):
-    random.shuffle(cards)
-    random_kartya = cards[random.randint(0,len(cards))]
+    random_kartya = cards[random.randint(0,len(cards)-1)]
     return random_kartya
 
 #inic pakli
